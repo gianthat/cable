@@ -257,7 +257,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<wirble>, [">= 0"])
       s.add_dependency(%q<annotate>, [">= 0"])
       s.add_dependency(%q<kaminari>, [">= 0"])
-      s.add_dependency(%q<rake>, ["= 0.8.7"])
+      s.add_dependency(%q<rake>, ["= 0.9.2.2"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["= 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
