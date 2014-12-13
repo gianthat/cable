@@ -23,7 +23,7 @@ Jeweler::Tasks.new do |gem|
 	gem.description = %Q{Cable is a CMS for developers.}
 	gem.email = "spencer@theablefew.com"
 	gem.license = "MIT"
-	gem.files = Dir["{lib}/**/*", "{app}/**/*", "{config}/**/*", "{public}/**/*", "VERSION"]
+	gem.files = Dir["{lib}/**/*", "{app}/**/*", "{config}/**/*", "VERSION"]
   
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
@@ -39,12 +39,12 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
+# require 'rcov/rcovtask'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+# end
 
 task :default => :test
 

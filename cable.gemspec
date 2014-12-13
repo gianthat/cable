@@ -4,16 +4,99 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{cable}
-  s.version = "1.0.11"
+  s.name = "cable"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Spencer Markowski", "Mike Bishop", "The Able Few"]
-  s.date = %q{2011-08-10}
-  s.description = %q{Cable is a CMS for developers.}
-  s.email = %q{spencer@theablefew.com}
+  s.date = "2014-12-13"
+  s.description = "Cable is a CMS for developers."
+  s.email = "spencer@theablefew.com"
+  s.extra_rdoc_files = [
+    "README.md"
+  ]
   s.files = [
     "VERSION",
+    "app/assets/images/cable/add.png",
+    "app/assets/images/cable/background.png",
+    "app/assets/images/cable/children.png",
+    "app/assets/images/cable/delete.png",
+    "app/assets/images/cable/empty-menu.png",
+    "app/assets/images/cable/event-icon.png",
+    "app/assets/images/cable/header-background.jpg",
+    "app/assets/images/cable/help.png",
+    "app/assets/images/cable/loader.gif",
+    "app/assets/images/cable/new-window.png",
+    "app/assets/images/cable/nil-icon.png",
+    "app/assets/images/cable/page.png",
+    "app/assets/images/cable/product-icon.jpg",
+    "app/assets/images/cable/search.png",
+    "app/assets/images/cable/story-icon.jpg",
+    "app/assets/images/iphone-style-checkboxes/off.png",
+    "app/assets/images/iphone-style-checkboxes/on.png",
+    "app/assets/images/iphone-style-checkboxes/slider.png",
+    "app/assets/images/iphone-style-checkboxes/slider_center.png",
+    "app/assets/images/iphone-style-checkboxes/slider_left.png",
+    "app/assets/images/iphone-style-checkboxes/slider_right.png",
+    "app/assets/javascripts/admin.js",
+    "app/assets/javascripts/cable_menu.js",
+    "app/assets/javascripts/iphone-style-checkboxes.js",
+    "app/assets/javascripts/jquery.quicksearch.js",
+    "app/assets/javascripts/jquery.tablesorter.min.js",
+    "app/assets/javascripts/jquery.tagsinput.js",
+    "app/assets/javascripts/jquery.ui.autocomplete.html.js",
+    "app/assets/stylesheets/cable.css",
+    "app/assets/stylesheets/cable/base.css",
+    "app/assets/stylesheets/cable/blueprint/ie.css",
+    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/cross.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/key.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/tick.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/buttons/readme.txt",
+    "app/assets/stylesheets/cable/blueprint/plugins/buttons/screen.css",
+    "app/assets/stylesheets/cable/blueprint/plugins/fancy-type/readme.txt",
+    "app/assets/stylesheets/cable/blueprint/plugins/fancy-type/screen.css",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/doc.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/email.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/external.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/feed.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/im.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/pdf.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/visited.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/xls.png",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/readme.txt",
+    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/screen.css",
+    "app/assets/stylesheets/cable/blueprint/plugins/rtl/readme.txt",
+    "app/assets/stylesheets/cable/blueprint/plugins/rtl/screen.css",
+    "app/assets/stylesheets/cable/blueprint/print.css",
+    "app/assets/stylesheets/cable/blueprint/screen.css",
+    "app/assets/stylesheets/cable/blueprint/src/forms.css",
+    "app/assets/stylesheets/cable/blueprint/src/grid.css",
+    "app/assets/stylesheets/cable/blueprint/src/grid.png",
+    "app/assets/stylesheets/cable/blueprint/src/ie.css",
+    "app/assets/stylesheets/cable/blueprint/src/print.css",
+    "app/assets/stylesheets/cable/blueprint/src/reset.css",
+    "app/assets/stylesheets/cable/blueprint/src/typography.css",
+    "app/assets/stylesheets/cable/buttons.css",
+    "app/assets/stylesheets/cable/formtastic.css",
+    "app/assets/stylesheets/cable/formtastic_changes.css",
+    "app/assets/stylesheets/cable/jquery-iphone-checkboxes.css",
+    "app/assets/stylesheets/cable/masks.css",
+    "app/assets/stylesheets/cable/menu.css",
+    "app/assets/stylesheets/cable/pagination.css",
+    "app/assets/stylesheets/cable/regions.css",
+    "app/assets/stylesheets/cable/resources.css",
+    "app/assets/stylesheets/cable/search.css",
+    "app/assets/stylesheets/cable/site_edit.css",
+    "app/assets/stylesheets/cable/tables.css",
+    "app/assets/stylesheets/cable/tags.css",
+    "app/assets/stylesheets/jquery/ui/images/bg_fallback.png",
+    "app/assets/stylesheets/jquery/ui/images/icon_sprite.png",
+    "app/assets/stylesheets/jquery/ui/images/progress_bar.gif",
+    "app/assets/stylesheets/jquery/ui/images/slider_handles.png",
+    "app/assets/stylesheets/jquery/ui/images/ui-icons_222222_256x240.png",
+    "app/assets/stylesheets/jquery/ui/images/ui-icons_454545_256x240.png",
+    "app/assets/stylesheets/jquery/ui/jquery-ui-1.8.7.custom.css",
+    "app/assets/stylesheets/tinymce/custom_rich_editor.css",
     "app/controllers/admin/cable_settings_controller.rb",
     "app/controllers/admin/cache_controller.rb",
     "app/controllers/admin/locations_controller.rb",
@@ -131,98 +214,18 @@ Gem::Specification.new do |s|
     "lib/generators/templates/main_controller.rb",
     "lib/generators/templates/partials/_block.html.erb",
     "lib/generators/templates/partials/_block_form.html.erb",
-    "lib/railties/tasks.rake",
-    "app/assets/images/cable/add.png",
-    "app/assets/images/cable/background.png",
-    "app/assets/images/cable/children.png",
-    "app/assets/images/cable/delete.png",
-    "app/assets/images/cable/empty-menu.png",
-    "app/assets/images/cable/event-icon.png",
-    "app/assets/images/cable/header-background.jpg",
-    "app/assets/images/cable/help.png",
-    "app/assets/images/cable/loader.gif",
-    "app/assets/images/cable/new-window.png",
-    "app/assets/images/cable/nil-icon.png",
-    "app/assets/images/cable/page.png",
-    "app/assets/images/cable/product-icon.jpg",
-    "app/assets/images/cable/search.png",
-    "app/assets/images/cable/story-icon.jpg",
-    "app/assets/images/iphone-style-checkboxes/off.png",
-    "app/assets/images/iphone-style-checkboxes/on.png",
-    "app/assets/images/iphone-style-checkboxes/slider.png",
-    "app/assets/images/iphone-style-checkboxes/slider_center.png",
-    "app/assets/images/iphone-style-checkboxes/slider_left.png",
-    "app/assets/images/iphone-style-checkboxes/slider_right.png",
-    "app/assets/javascripts/admin.js",
-    "app/assets/javascripts/cable_menu.js",
-    "app/assets/javascripts/iphone-style-checkboxes.js",
-    "app/assets/javascripts/jquery.quicksearch.js",
-    "app/assets/javascripts/jquery.tablesorter.min.js",
-    "app/assets/javascripts/jquery.tagsinput.js",
-    "app/assets/javascripts/jquery.ui.autocomplete.html.js",
-    "app/assets/stylesheets/cable.css",
-    "app/assets/stylesheets/cable/base.css",
-    "app/assets/stylesheets/cable/blueprint/ie.css",
-    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/cross.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/key.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/buttons/icons/tick.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/buttons/readme.txt",
-    "app/assets/stylesheets/cable/blueprint/plugins/buttons/screen.css",
-    "app/assets/stylesheets/cable/blueprint/plugins/fancy-type/readme.txt",
-    "app/assets/stylesheets/cable/blueprint/plugins/fancy-type/screen.css",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/doc.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/email.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/external.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/feed.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/im.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/pdf.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/visited.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/icons/xls.png",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/readme.txt",
-    "app/assets/stylesheets/cable/blueprint/plugins/link-icons/screen.css",
-    "app/assets/stylesheets/cable/blueprint/plugins/rtl/readme.txt",
-    "app/assets/stylesheets/cable/blueprint/plugins/rtl/screen.css",
-    "app/assets/stylesheets/cable/blueprint/print.css",
-    "app/assets/stylesheets/cable/blueprint/screen.css",
-    "app/assets/stylesheets/cable/blueprint/src/forms.css",
-    "app/assets/stylesheets/cable/blueprint/src/grid.css",
-    "app/assets/stylesheets/cable/blueprint/src/grid.png",
-    "app/assets/stylesheets/cable/blueprint/src/ie.css",
-    "app/assets/stylesheets/cable/blueprint/src/print.css",
-    "app/assets/stylesheets/cable/blueprint/src/reset.css",
-    "app/assets/stylesheets/cable/blueprint/src/typography.css",
-    "app/assets/stylesheets/cable/buttons.css",
-    "app/assets/stylesheets/cable/formtastic.css",
-    "app/assets/stylesheets/cable/formtastic_changes.css",
-    "app/assets/stylesheets/cable/jquery-iphone-checkboxes.css",
-    "app/assets/stylesheets/cable/masks.css",
-    "app/assets/stylesheets/cable/menu.css",
-    "app/assets/stylesheets/cable/pagination.css",
-    "app/assets/stylesheets/cable/regions.css",
-    "app/assets/stylesheets/cable/resources.css",
-    "app/assets/stylesheets/cable/search.css",
-    "app/assets/stylesheets/cable/site_edit.css",
-    "app/assets/stylesheets/cable/tables.css",
-    "app/assets/stylesheets/cable/tags.css",
-    "app/assets/stylesheets/jquery/ui/images/bg_fallback.png",
-    "app/assets/stylesheets/jquery/ui/images/icon_sprite.png",
-    "app/assets/stylesheets/jquery/ui/images/progress_bar.gif",
-    "app/assets/stylesheets/jquery/ui/images/slider_handles.png",
-    "app/assets/stylesheets/jquery/ui/images/ui-icons_222222_256x240.png",
-    "app/assets/stylesheets/jquery/ui/images/ui-icons_454545_256x240.png",
-    "app/assets/stylesheets/jquery/ui/jquery-ui-1.8.7.custom.css",
-    "app/assets/stylesheets/tinymce/custom_rich_editor.css"
+    "lib/railties/tasks.rake"
   ]
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Cable CMS Engine for Rails 3}
+  s.rubygems_version = "1.8.23"
+  s.summary = "Cable CMS Engine for Rails 3"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, ["~> 3.2.0"])
+      s.add_runtime_dependency(%q<rails>, [">= 3.0.6"])
       s.add_runtime_dependency(%q<orm_adapter>, [">= 0"])
       s.add_runtime_dependency(%q<rainbow>, [">= 0"])
       s.add_runtime_dependency(%q<jquery-rails>, [">= 0"])
@@ -237,12 +240,11 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<wirble>, [">= 0"])
       s.add_runtime_dependency(%q<annotate>, [">= 0"])
       s.add_runtime_dependency(%q<kaminari>, [">= 0"])
-      s.add_runtime_dependency(%q<rake>, ["= 0.8.7"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_runtime_dependency(%q<rake>, [">= 0.8.7"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["= 1.6.4"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
-      s.add_dependency(%q<rails>, ["~> 3.2.0"])
+      s.add_dependency(%q<rails>, [">= 3.0.6"])
       s.add_dependency(%q<orm_adapter>, [">= 0"])
       s.add_dependency(%q<rainbow>, [">= 0"])
       s.add_dependency(%q<jquery-rails>, [">= 0"])
@@ -257,13 +259,12 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<wirble>, [">= 0"])
       s.add_dependency(%q<annotate>, [">= 0"])
       s.add_dependency(%q<kaminari>, [">= 0"])
-      s.add_dependency(%q<rake>, ["= 0.9.2.2"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<rake>, [">= 0.8.7"])
+      s.add_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_dependency(%q<jeweler>, ["= 1.6.4"])
-      s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rails>, ["~> 3.2.0"])
+    s.add_dependency(%q<rails>, [">= 3.0.6"])
     s.add_dependency(%q<orm_adapter>, [">= 0"])
     s.add_dependency(%q<rainbow>, [">= 0"])
     s.add_dependency(%q<jquery-rails>, [">= 0"])
@@ -278,10 +279,9 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<wirble>, [">= 0"])
     s.add_dependency(%q<annotate>, [">= 0"])
     s.add_dependency(%q<kaminari>, [">= 0"])
-    s.add_dependency(%q<rake>, ["= 0.8.7"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<rake>, [">= 0.8.7"])
+    s.add_dependency(%q<bundler>, [">= 1.0.0"])
     s.add_dependency(%q<jeweler>, ["= 1.6.4"])
-    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
